@@ -1,0 +1,21 @@
+{
+  "extensionName": {
+    "message": "biKiosk",
+    "description": "Kiosk Features for Firefox."
+  },
+
+  "extensionDescription": {
+    "message": "Add some features for kiosk mode (full-screen on start, remote reload).",
+    "description": "Description of the add-on."
+  },
+
+  "menuItemFullScreen": {
+    "message": "&Full Screen",
+    "description": "Force full screen mode. Remove tool box and address bar. No mouse movement return from this mode."
+  },
+
+  "menuItemReload": {
+    "message": "&Reload Firefox",
+    "description": "Reload page. Skip cache."
+  }
+}
