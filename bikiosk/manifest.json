@@ -1,45 +1,37 @@
 {
-  "manifest_version": 2,
-  "name": "biKiosk",
-  "description": "Kiosk mode for Firefox",
-  "version": "1.0.0",
-  "developer": {
-    "name": "Viter Dar",
-    "url": "https://github.com/ViterDar/biKiosk"
+  "manifest_version"            : 2,
+  "name"                        : "biKiosk",
+  "description"                 : "Kiosk features for Firefox",
+  "version"                     : "1.1.0",
+  "developer"                   : {
+    "name"                      : "Viter Dar",
+    "url"                       : "https://github.com/ViterDar/biKiosk"
   },
-  "icons": {
-    "64": "icons/icon.png"
-  },
-  "background": {
-    "scripts": [
-      "background_script.js"
-    ]
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "*://*.mozilla.org/*"
-      ],
-      "js": [
-        "content_script.js"
-      ]
+  "default_locale"              : "en",
+  "browser_specific_settings"   : {
+    "gecko"                     : {
+      "id"                      : "biKiosk@bandIT.org",
+      "strict_min_version"      : "56.0a1"
     }
+  },
+  "permissions"                 : [
+    "activeTab",
+    "menus",
+    "nativeMessaging"
   ],
-  "browser_action": {
-    "default_icon": {
-      "64": "icons/icon.png"
-    },
-    "default_popup": "browserAction/index.html",
-    "default_title": "biKiosk"
+  "icons"                       : {
+    "96"                        : "icons/full-screen-96x96.png",
+    "128"                       : "icons/full-screen-128x128.png"
   },
-  "page_action": {
-    "default_icon": {
-      "64": "icons/icon.png"
-    },
-    "default_popup": "pageAction/index.html",
-    "default_title": "biKiosk"
+  "background"                  : {
+    "page"                      : "background.html"
   },
-  "options_ui": {
-    "page": "options/index.html"
+  "browser_action"              : {
+    "default_title"             : "biKiosk",
+    "default_icon"              : "icons/full-screen-96x96.png",
+    "default_popup"             : "popup/full_screen.html"
+  },
+  "options_ui"                  : {
+    "page"                      : "options/index.html"
   }
 }

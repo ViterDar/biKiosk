@@ -1,28 +1,27 @@
 {
-  "name": "bikiosk",
-  "version": "1.0.0",
-  "description": "Kiosk mode for Firefox",
-  "main": "index.js",
-  "module": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:firedev" : "web-ext --source-dir ./bikiosk/ run"
+  "name"                        : "bikiosk",
+  "version"                     : "1.0.0",
+  "description"                 : "Kiosk mode for Firefox",
+  "main"                        : "index.js",
+  "scripts"                     : {
+    "test"                      : "echo \"Error: no test specified\" && exit 1",
+    "start:firedev"             : "web-ext --source-dir ./bikiosk/ run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ViterDar/biKiosk.git"
+  "repository"                  : {
+    "type"                      : "git",
+    "url"                       : "git+https://github.com/ViterDar/biKiosk.git"
   },
-  "keywords": [
+  "keywords"                    : [
     "kiosk",
     "firefox"
   ],
-  "author": "viter@itband.org",
-  "license": "GPL-3.0-or-later",
+  "author"                      : "viter@itband.org",
+  "license"                     : "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/ViterDar/biKiosk/issues"
+    "url"                       : "https://github.com/ViterDar/biKiosk/issues"
   },
-  "homepage": "https://github.com/ViterDar/biKiosk#readme",
+  "homepage"                    : "https://github.com/ViterDar/biKiosk#readme",
   "dependencies": {
-    "esm": "^3.2.25"
+    "web-ext"                   : "^4.2.0",
   }
 }
