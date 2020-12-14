@@ -5,7 +5,7 @@ import json
 import struct
 import tailer
 
-path = '/home/v/s/ff-reload'
+path = '/home/trmuser/s/ff-reload'
 
 # Read a message from stdin and decode it.
 def getMessage():
