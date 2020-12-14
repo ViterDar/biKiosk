@@ -2,7 +2,7 @@
   "manifest_version"            : 2,
   "name"                        : "biKiosk",
   "description"                 : "Kiosk features for Firefox",
-  "version"                     : "1.1.0",
+  "version"                     : "1.1.2",
   "developer"                   : {
     "name"                      : "Viter Dar",
     "url"                       : "https://github.com/ViterDar/biKiosk"
@@ -10,25 +10,23 @@
   "default_locale"              : "en",
   "browser_specific_settings"   : {
     "gecko"                     : {
-      "id"                      : "biKiosk@bandIT.org",
       "strict_min_version"      : "56.0a1"
     }
   },
   "permissions"                 : [
+    "nativeMessaging",
     "activeTab",
-    "menus",
-    "nativeMessaging"
+    "menus"
   ],
   "icons"                       : {
-    "96"                        : "icons/full-screen-96x96.png",
-    "128"                       : "icons/full-screen-128x128.png"
+    "128"                       : "icons/full-screen-128.png"
   },
   "background"                  : {
     "page"                      : "background.html"
   },
   "browser_action"              : {
     "default_title"             : "biKiosk",
-    "default_icon"              : "icons/full-screen-96x96.png",
+    "default_icon"              : "icons/full-screen-128.png",
     "default_popup"             : "popup/full_screen.html"
   },
   "options_ui"                  : {

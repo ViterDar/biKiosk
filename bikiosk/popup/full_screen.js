@@ -1,5 +1,5 @@
 
-//console.log("biKiosk : popup/full_screen.js is loading...");
+console.log("biKiosk : popup/full_screen.js is loading...");
 
 /**
  * send a "full_screen" message to the background script.
@@ -16,8 +16,8 @@ function full_screen()
  */
 function ff_reload()
 {
-  //console.log("biKiosk : send event : ff_reload");
-  browser.runtime.sendMessage({ command: "ff-reload" });
+  console.log("biKiosk : send event : ff_reload");
+  //browser.runtime.sendMessage({ command: "ff-reload" });
 }
 
 

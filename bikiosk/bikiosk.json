@@ -1,0 +1,7 @@
+{
+  "name"                        : "biKiosk",
+  "description"                 : "Socket and file channel to the web app",
+  "path"                        : "/opt/ff/bikiosk.py",
+  "type"                        : "stdio",
+  "allowed_extensions"          : ["df9999cbdc852d218954a9bfbe7e1f45a3cf623f@temporary-addon"]
+}
