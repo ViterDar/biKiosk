@@ -42,6 +42,8 @@ Eddit `bikiosk.json`, fix `path` , it must contain full path to the file: `bikio
 
 Edit `bikiosk.py`. Variable `path` must points to the file which will be whatced by Add-on.
 
+Install tailer by `pip install tailer` command.
+
 ### How it works? ###
 
 Add-on runs `tail` command. It gets the last line when the file was updated and pass this line to the JS application. Currently only one comand realised: Reload. It reloads active Firefox Page.

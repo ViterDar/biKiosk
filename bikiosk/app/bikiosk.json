@@ -3,5 +3,5 @@
   "description"                 : "Socket and file channel to the web app",
   "path"                        : "/home/trmuser/.mozilla/native-messaging-hosts/bikiosk.py",
   "type"                        : "stdio",
-  "allowed_extensions"          : ["14f3817c-0c9f-407d-b2fe-20c55b9aac71"]
+  "allowed_extensions"          : ["{14f3817c-0c9f-407d-b2fe-20c55b9aac71}"]
 }
