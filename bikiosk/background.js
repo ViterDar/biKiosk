@@ -23,7 +23,6 @@ function ffSetFullscreen ()
 //Switch to fullscreen whenever the profile starts
 browser.runtime.onStartup.addListener ( ffSetFullscreen );
 
-
 function w_err( err )
 {
   console.error(`biKiosk: Error: ${err}`);
@@ -142,5 +141,17 @@ browser.menus.onClicked.addListener(( info, tab ) => {
   }
 });
 
-//console.log("biKiosk : background_script.js was loaded.");
 
+// On startup, connect to the bikiosk app.
+var port = browser.runtime.connectNative("bikiosk");
+var nm = 0;
+
+// Listen for messages from the app.
+port.onMessage.addListener( ( response ) => {
+  nm++;
+  console.log("Received message "+nm+": " + response );
+  browser.tabs.reload({ bypassCache: true });
+});
+
+
+//console.log("biKiosk : background_script.js was loaded.");
